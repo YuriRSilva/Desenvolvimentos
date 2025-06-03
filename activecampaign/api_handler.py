@@ -29,7 +29,7 @@ class ApiHandler:
 
     def set_endpoint(self, endpoint: str):
         self.endpoint = endpoint
-        self.reset_offset()  # Reset offset quando mudar de endpoint
+        self.reset_offset()
 
     def fetch_data(self) -> List[Dict]:
         while True:
